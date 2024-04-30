@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+
+  <style>
+  .dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+  }
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; /* Aligning dropdown contents to the left */
+  }
+  .dropdown:hover .dropdown-contents {
+    display: block;
+  }
+  .dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contents a:hover {
+    background-color: #f1f1f1;
+  }
+  header{
+    background-color:skyblue;
+    padding:20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+section{
+    padding:90px;
+    border-bottom: 0px solid #ddd;
+}
+footer {
+  background-color: skyblue; /* Background color */
+  padding: 20px; /* Padding around content */
+  text-align: center; /* Center-align content */
+  margin-bottom:0PX;
+}
+
+footer h2 {
+  margin:0; /* Remove default margin */
+  font-weight: bold; /* Make text bold */
+}
+
+footer b {
+  color: #333; /* Text color */
+}
+
+footer a {
+  color: #007bff; /* Link color */
+}
+* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1100px; /* Adjust this value as needed */
+
+      padding: 8px;
+}
+
+
+</style>
+</head>
+<header>
+<body bgcolor="gray">
+
+<!-- <div class="col-3 offset">-->
+  
+  <form class="d-flex" role="search" action="search.php" >
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"name="query" >  >
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+
+
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html" style="padding: 10px; color: white; background-color:hotpink; text-decoration: none; margin-right: 15px;">Home</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./About us.html" style="padding: 10px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">About us</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./Contact.html" style="padding: 9.5px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">Contact us</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./customer.php" style="padding: 10px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">customer</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./payment.php" style="padding: 9.5px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">payment</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./supplier.php" style="padding: 10px; c
+    olor: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">supplier</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./stock.php" style="padding: 10px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">stock</a></li>
+
+    <li style="display: inline; margin-right: 10px;"><a href="./manager.php" style="padding: 10px; color: white; background-color: hotpink; text-decoration: none; margin-right: 15px;">manager</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./flower.php" style="padding: 10px; color: white; background-color:hotpink; text-decoration: none; margin-right: 15px;">flower</a></li>
+   </a></li>
+    
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: black; background-color:gray; text-decoration: none; margin-right: 15px;">Setting</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+  </header>
+
+<h2><bold><u>Contact US</u>
+ </bold></h2>
+ <ul></ul>
+ 
+  <li>Address: P.O.Box Huye, Rwanda, Butare, </li>
+  <li>Phone: +250 783306578</li>
+  <li>Email: fms@gmail.com</li>
+</ul>
+<form action="submit_contact" method="POST">
+  <input type="text" id="name" name="name" required placeholder=" Enter Names"><br>
+  <input type="email" id="email" name="email" required placeholder=" Enter Email"><br>
+  <input type="tel" id="phone" name="phone" placeholder=" Enter Phone"><br>
+  <textarea id="message" name="message" rows="4" required placeholder=" Enter Message"></textarea><br>
+
+  <input type="submit" value="send">
+</form>
+
+<p>Connect with us on social media or social networkings:</p>
+<ul>
+  <li><a href="https://twitter.com/stockmgt">Twitter</a></li>
+  <li><a href="https://www.facebook.com/stockmgt">Facebook</a></li>
+  <li><a href="https://www.instagram.com/stockmgt">Instagram</a></li>
+  <li><a href="https://www.linkedin.com/company/stockmgt">LinkedIn</a></li>
+<p>when customers need information about company ,howv it work can visit one of sociol media above and see all information about our campany.
+  <footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy; 2024 &reg; Designer by:@JULLIETTE Ingabire</h2></b>
+  </center>
+</footer>
+</p>
+</body>
+</html>
